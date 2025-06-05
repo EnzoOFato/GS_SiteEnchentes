@@ -120,6 +120,7 @@ p::first-letter {
     width: 80%;
     background-color: rgb(255, 245, 235);
     border-radius: 50px;
+    border: 2px solid rgb(0, 160, 160);
 }
 .missao h1 {
     font-size: 6em;
@@ -129,8 +130,53 @@ p::first-letter {
     font-size: 1.5em;
     margin: 0;
     padding: 1em;
+    margin-top: -2em;
 }
 .missao p::first-letter {
     font-size: 1.7em;
     font-weight: bold;
+}
+.publico{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 245, 235);
+    padding: 2% 0;
+}
+.card-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card{
+    background-color: rgb(180, 220, 255);
+    height: 40em;
+    width: 45%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 1em;
+    justify-content: space-around;
+}
+.card:hover{
+    transform: scale(1.01);
+    transition: ease-in-out 0.1s;
+    border: 2px solid rgb(0, 160, 160);
+}
+.card img {
+    scale: 2;
+}
+.card h1 {
+    font-size: 4em;
+    margin: 0;
+}
+.card p {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    margin-top: -2em;
 }
