@@ -180,3 +180,45 @@ p::first-letter {
     margin: 0;
     margin-top: -2em;
 }
+.beneficio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 245, 235);
+    padding: 2% 0; 
+}
+.beneficio-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(70, 30, 30);
+    height: 70em;
+    border-radius: 50px;
+    border: 1px solid rgb(0, 160, 160);
+}
+.beneficio-container h1{
+    font-size: 5em;
+    color: rgb(255, 245, 235);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.beneficio-container h2{
+    font-size: 3em;
+    color: rgb(255, 245, 235);
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+.seta{
+    box-shadow: 2px -2px 0 1px rgb(255, 245, 235);
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    padding: 30px;
+    margin-top: 1em;
+    transform: rotate(135deg);
+}
