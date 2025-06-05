@@ -1,18 +1,18 @@
 const perguntas = [
-  { texto: "1. Como as emchentes começam?", 
+  { texto: "1. Como as enchentes começam?", 
     opcoes: ["Com um dia de sol", "com um dia de chuva forte", "Forte ventania ao longo de um mês", "Ano com neve"], 
     correta: 1 },
   { texto: "2. Onde é comum ocorrer enchentes?", 
-    opcoes: ["Desertos", "Montanhas", "Áreas urbanas", "Picos nevados"], 
+    opcoes: ["Desers", "Montanhas", "Áreas urbanas", "Picos nevados"], 
     correta: 2 },
   { texto: "3. Qual atitude ajuda a evitar enchentes?", 
     opcoes: ["Desmatar", "Construir sobre rios", "Plantar árvores", "Jogar lixo na rua"], 
     correta: 2 },
-  { texto: "4. O que entope bueiros?", 
-    opcoes: ["Chuva limpa", "Neve", "Lixo", "Areia"], 
+  { texto: "4. O que faz a água deixar de ser transportada?", 
+    opcoes: ["Chuva limpa", "Sol quente", "Lixo nos bueiros", "Areia nas ruas"], 
     correta: 2 },
-  { texto: "5. Enchentes podem causar:", 
-    opcoes: ["Fome", "Calor", "Alagamentos", "Neve"], 
+  { texto: "5. Chuvas fortes em cidades podem causar:", 
+    opcoes: ["Frio", "Calor", "Alagamentos", "Neve"], 
     correta: 2 },
   { texto: "6. Qual órgão pode alertar sobre enchentes?", 
     opcoes: ["Correios", "Defesa Civil", "Banco Central", "Escola"], 
@@ -54,7 +54,7 @@ function mostrarPergunta() {
       } else {
         pergunta.textContent = "";
         opcoes.innerHTML = "";
-        resultado.textContent = `Você acertou ${acertos} de ${perguntas.length} perguntas.`;
+        resultado.textContent = `Parabéns, você acertou ${acertos} de ${perguntas.length} perguntas.`;
       }
     };
     opcoes.appendChild(botao);
