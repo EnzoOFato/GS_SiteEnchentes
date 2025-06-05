@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="src/CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 <body>
     <header>
         <div class="img-container">
             <a href="#" class="logo"><img src="src/assets/imgs/Logo_GS.png" alt="logo" class="logo"></a>
         </div>
-        <div class="pages">
+        <div class="pages" id="menu">
+            <a href="#home">Home</a>
+            <a href="#ajuda">Ajude-nos</a>
+            <a href="#tempo">Tempo</a>
+            <a href="#Quiz">Quiz</a>
+        </div>
+        <div class="alinhamento">
+            <button id="menu-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
             <a href="#home">Home</a>
             <a href="#about">Ajude-nos</a>
             <a href="#services">Tempo</a>
-        </div>
-        <div class="alinhamento">
+            <a href="#Quiz">Quiz</a>
         </div>
     </header>
     <section class="problema">
@@ -106,4 +117,5 @@
         <h2>&copy; 2025 Causa contra as enchentes</h2>
     </footer>
 </body>
+<script src="src/JS/script.js"></script>
 </html>
