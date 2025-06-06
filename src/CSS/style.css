@@ -149,7 +149,6 @@ p::first-letter {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 245, 235);
     padding: 2% 0;
 }
 .card-container{
@@ -193,7 +192,6 @@ p::first-letter {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 245, 235);
     padding: 2% 0; 
 }
 .beneficio-container{
@@ -241,7 +239,6 @@ p::first-letter {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 245, 235);
     padding: 2% 0;
     gap: 2em; 
 }
@@ -305,45 +302,6 @@ p::first-letter {
         flex-direction: column;
         align-items: center;
     }
-    .pages {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100%;
-        width: 70%;
-        background-color: rgb(180, 220, 255);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2em;
-        transition: right 0.3s ease-in-out;
-        z-index: 1000;
-    }
-
-    .pages.active {
-        right: 0;
-    }
-
-    .alinhamento {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .alinhamento button {
-        scale: 2;
-        cursor: pointer;
-        background: none;
-        display: flex;
-        align-items: center;
-        border: none;
-    }
-
-    .alinhamento span:hover {
-        background-color: rgb(0, 160, 160);
-        border-radius: 5px;
-        transition: ease-in-out 0.3s;
-    }
 }
 .mobile-menu {
     position: fixed;
@@ -364,8 +322,29 @@ p::first-letter {
     z-index: 2;
 }
 .mobile-menu a {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 .mobile-menu.active {
     right: 0;
+}
+.background{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.background button{
+    height: 3em;
+    width: 3em;
+    border: white 3px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.background button:nth-child(1){
+    background-color: rgb(255, 245, 235);
+}
+.background button:nth-child(2){
+    background-color: #ffffff;
+}
+.background button:nth-child(3){
+    background-color: rgb(0, 160, 160);
 }
