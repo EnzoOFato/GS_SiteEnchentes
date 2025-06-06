@@ -1,38 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+SA+Hand:wght@400..700&family=Pattaya&display=swap');
 
-header {
+header{
     background-color: rgb(180, 220, 255);
     width: 100%;
-    height: 15vh;
+    height: 10em;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
-a {
+footer{
+    background-color: rgb(180, 220, 255);
+    width: 100%;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+a{
     text-decoration: none;
     color: rgb(70, 30, 30);
-    font-size: 1.8em;
+    font-size: 1.8em;   
 }
-
 a:hover {
     color: rgb(0, 160, 160);
     transition: ease-in-out 0.3s;
 }
-
 .img-container {
     width: 33%;
     height: 100%;
     display: flex;
     align-items: center;
 }
-
-.logo {
+.logo{
     cursor: pointer;
     margin-left: 1em;
-    max-height: 100%;
 }
-
 .pages {
     display: flex;
     justify-content: space-evenly;
@@ -40,27 +42,26 @@ a:hover {
     width: 33%;
     height: 100%;
 }
-
-.alinhamento {
+.alinhamento{
     width: 33%;
     height: 100%;
+    display: none;
 }
 
 body {
     font-family: "Edu SA Hand", cursive;
     margin: 0;
-    padding: 0;
     background-color: rgb(255, 245, 235);
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    color: rgb(70, 30, 30);
 }
 
 .weather-container {
-    width: 80%;
+    width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
@@ -72,6 +73,8 @@ body {
 .weather-card {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 80%;
     background: white;
     border-radius: 8px;
     padding: 1rem;
@@ -92,6 +95,10 @@ body {
 
 .weather-info {
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
 }
 
 .location {
@@ -117,4 +124,77 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1080px) {
+    .alinhamento{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .alinhamento button{
+        scale: 2;
+        cursor: pointer;
+        background: none;
+        display: flex;
+        align-items: center;
+        border: none;
+    }
+    .alinhamento span:hover{
+        background-color: rgb(0, 160, 160);
+        border-radius: 5px;
+        transition: ease-in-out 0.3s;
+    }
+    .pages{
+        display: none;
+    }
+    .info{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(180, 220, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2em;
+    gap: 2em;
+    transition: right 0.3s ease-in-out;
+    border: 3px solid rgb(0, 160, 160);
+    border-width: 0 0 0 1px;
+    z-index: 2;
+}
+.mobile-menu a {
+    font-size: 2.5em;
+}
+.mobile-menu.active {
+    right: 0;
+}
+.background{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.background button{
+    height: 3em;
+    width: 3em;
+    border: white 3px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.background button:nth-child(1){
+    background-color: rgb(255, 245, 235);
+}
+.background button:nth-child(2){
+    background-color: #ffffff;
+}
+.background button:nth-child(3){
+    background-color: rgb(0, 160, 160);
 }
