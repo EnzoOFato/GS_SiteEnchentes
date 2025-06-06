@@ -6,7 +6,7 @@ Este repositório contém o projeto de uma landing page desenvolvida como parte 
 ## **Integrantes do Grupo**
 - **Enzo Amá** (RM: 562138)  
 - **Leonardo Borges** (RM: 565966)  
-- **Paulo Henrique** (RM: 569172)
+- **Paulo Henrique** (RM: 562179)
 
 ## **Estrutura do Projeto**
 
