@@ -4,15 +4,51 @@
   <meta charset="UTF-8">
   <title>Quiz Simples</title>
   <link rel="stylesheet" href="../CSS/quizstyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 <body>
+  <header>
+        <div class="img-container">
+            <a href="#" class="logo"><img src="../assets/imgs/Logo_GS.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="pages" id="menu">
+            <a href="../../index.html">Home</a>
+            <a href="ongs.html">Ajude-nos</a>
+            <a href="tempo.html">Tempo</a>
+            <a href="#quiz">Quiz</a>
+            <div class="background">
+                <button class="creme" onclick="mudaCor(this)" value="creme"></button>
+                <button class="white" onclick="mudaCor(this)" value="branco"></button>
+                <button class="blue" onclick="mudaCor(this)" value="azul"></button>
+            </div>
+        </div>
+        <div class="alinhamento">
+            <button id="menu-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="../../index.html">Home</a>
+            <a href="ongs.html">Ajude-nos</a>
+            <a href="tempo.html">Tempo</a>
+            <a href="#quiz">Quiz</a>
+            <div class="background">
+                <button class="creme" onclick="mudaCor(this)" value="creme"></button>
+                <button class="white" onclick="mudaCor(this)" value="branco"></button>
+                <button class="blue" onclick="mudaCor(this)" value="azul"></button>
+            </div>
+        </div>
+    </header>
   <div id="quiz">
     <h1>Quiz: Enchentes</h1>
     <p id="pergunta"></p>
     <div id="opcoes"></div>
     <p id="resultado"></p>
   </div>
-
+  <footer>
+        <h2>&copy; 2025 Causa contra as enchentes</h2>
+    </footer>
   <script src="../JS/quiz.js"></script>
+  <script src="../JS/script.js"></script>
 </body>
 </html>
