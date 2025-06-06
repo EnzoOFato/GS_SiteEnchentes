@@ -54,6 +54,9 @@ a:hover {
     width: 33%;
     height: 100%;
 }
+
+/*Para cima apenas o código do rodapé e header*/
+
 p::first-letter {
     font-size: 1.7em;
     font-weight: bold;
@@ -276,6 +279,9 @@ p::first-letter {
 .alinhamento{
     display: none;
 }
+
+/* Importante também copiar o código abaixo */
+
 @media (max-width: 1080px) {
     .alinhamento{
         display: flex;
